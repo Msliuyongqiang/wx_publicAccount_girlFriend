@@ -25,8 +25,7 @@
 #       - name: Run Script
 #         run: node ./index.js
 
-
-name: learn-github-actions
+name: push-info
 run-name: ${{ github.actor }} is learning GitHub Actions
 # on: [push]
 
