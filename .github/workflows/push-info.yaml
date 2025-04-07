@@ -1,20 +1,64 @@
-name: push-info
+# name: push-info
 
+# on:
+#   push:
+#     branches:
+#       - main
+#   schedule:
+#     - cron: "0 0 * * *" # UTC（国际标准时间）0时0分，北京+8小时 ，代表北京时间上午8时0分
+
+# jobs:
+#   run-coupons:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@main
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: "18.19.1"
+
+#       - name: Install Dependencies
+#         run: |
+#           npm install axios moment
+
+#       - name: Run Script
+#         run: node ./index.js
+
+
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+# on: [push]
+
+# push：代码推送到仓库时触发
+# pull_request：Pull Request 创建或更新时触发
+# workflow_dispatch：手动触发
+# schedule：定时触发
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: "0 0 * * *" # UTC（国际标准时间）0时0分，北京+8小时 ，代表北京时间上午8时0分
+    - cron: "0 1 * * *" # UTC（国际标准时间）1时0分，北京+8小时 ，代表北京时间中午9时0分
 
+# jobs:
+#   check-bats-version:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: '14'
+#       - run: npm install -g bats
+#       - run: bats -v
 jobs:
   run-coupons:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@main 
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2git
         with:
           node-version: "18.19.1"
 
