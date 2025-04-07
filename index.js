@@ -21,6 +21,10 @@ const start = async () => {
         menstr: { value: menstr },
         LoveWords: { value: LoveWords },
         days: { value: loveDays },
+        userName:{value:'小于宝宝❤'},
+        youBirthDay:{value:'----'}, //你的生日
+        myBirthDay:{value:'----'},//我的生日
+        weBirthDay:{value:'----'},//我们的纪念日
         // fight: {value: '开心消消乐 + 王者荣耀 => 加加油'},
     }
 
