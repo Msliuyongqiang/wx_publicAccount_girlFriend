@@ -10,6 +10,7 @@ const params = {
     // users:['ozzts6uJ4318X1sfuUnAGmu47NBc'],
     wea_app_id: '27657985',
     wea_app_secret: 'a6IxMQbG',
+    // wea_city_id: '101180110',
     wea_city_id: '101180110',
     // 101030100  天津
     // 101180101  郑州
